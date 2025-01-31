@@ -1,6 +1,8 @@
 public class MaximumSubArraySum {
 
     public static int findMaxSubArraySum(int arr[]){
+
+        //Maintain two variables
         int currentSum = 0;
         int maxSum = Integer.MIN_VALUE;
 
@@ -8,10 +10,11 @@ public class MaximumSubArraySum {
             currentSum+=num;
             maxSum = Math.max(maxSum, currentSum);
 
+
+            // if current sum is negative ,better reset to 0
             if (currentSum<0) {
                 currentSum=0;
             }
-
          
         }
         return maxSum;
