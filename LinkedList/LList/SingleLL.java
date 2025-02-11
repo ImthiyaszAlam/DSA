@@ -2,6 +2,7 @@ public class SingleLL {
 
     Node hNode;
 
+//Creating node and shifting head to newly created node 
     void insertAtBeginning(int data) {
         Node newNode = new Node(data);
         newNode.next = hNode;
