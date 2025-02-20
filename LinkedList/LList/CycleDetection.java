@@ -4,15 +4,15 @@ public class CycleDetection {
 
     public static void main(String[] args) {
         CycleDetection cd = new CycleDetection();
-        cd.insertAtEnd(1);
-        cd.insertAtEnd(2);
-        cd.insertAtEnd(3);
-        cd.insertAtEnd(4);
-        cd.insertAtEnd(5);
+        CycleDetection.insertAtEnd(1);
+        CycleDetection.insertAtEnd(2);
+        CycleDetection.insertAtEnd(3);
+        CycleDetection.insertAtEnd(4);
+        CycleDetection.insertAtEnd(5);
 
-        cd.createCycle(2); // Creating a cycle at index 2 (node with value 3)
+        CycleDetection.createCycle(2); // Creating a cycle at index 2 (node with value 3)
 
-        if (cd.hasCycle()) {
+        if (CycleDetection.hasCycle()) {
             System.out.println("Cycle detected in Linked List.");
         } else {
             System.out.println("No cycle in Linked List.");
