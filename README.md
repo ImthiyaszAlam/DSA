@@ -1,10 +1,10 @@
 
 
-# 📚 Data Structures & Algorithms (DSA) in Kotlin 
+# 📚 Data Structures & Algorithms (DSA) in Java 
 
 ---
 
-This repository contains **optimized implementations** of **Data Structures and Algorithms (DSA)** using **Kotlin**. It serves as a **reference guide** for coding interviews, competitive programming, and problem-solving.
+This repository contains **optimized implementations** of **Data Structures and Algorithms (DSA)** using **Java**. It serves as a **reference guide** for coding interviews, competitive programming, and problem-solving.
 
 ---
 
