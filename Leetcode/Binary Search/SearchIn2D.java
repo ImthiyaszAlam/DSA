@@ -1,20 +1,33 @@
 public class SearchIn2D {
 
     public static boolean search(int[][] matrix, int target) {
-        for (int i = 0; i <= matrix.length - 1; i++) {
-            for (int j = 0; j <= matrix[0].length - 1; j++) {
-                if (matrix[i][j] == target) {
-                    return true;
-                }
+
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int left = 0;
+        int right = rows * cols-1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            int row = mid / cols;
+            int col = mid % cols;
+
+            int midValue = matrix[row][col];
+            if (midValue == target) {
+                return true;
+            } else if (target < midValue) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
         return false;
-     
+
     }
 
     public static void main(String[] args) {
-        int nums[][] = { { 1, 1 }, { 1, 2 }, { 1, 3 } };
-        int target = 3;
+        int nums[][] = { { 1, 4}, { 2, 5 }, { 3, 6 } };
+        int target = 2;
 
         System.out.println(search(nums, target));
     }
