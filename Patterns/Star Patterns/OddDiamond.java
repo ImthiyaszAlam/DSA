@@ -1,6 +1,9 @@
-public class Diamond {
+public class OddDiamond {
+
+
     public static void main(String[] args) {
-        int n = 5;
+        
+            int n = 5;
 
         // Upper Pyramind
 
