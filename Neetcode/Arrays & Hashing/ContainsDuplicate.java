@@ -8,12 +8,12 @@ public class ContainsDuplicate {
 
         HashSet<Integer> duplicateMap = new HashSet<>();
 
-        for (int num : nums) {
+        for (int i=0;i<nums.length;i++) {
 
-            if (duplicateMap.contains(num)) {
+            if (duplicateMap.contains(nums[i])) {
                 return true;
             }
-            duplicateMap.add(num);
+            duplicateMap.add(nums[i]);
         }
         return false;
     }
