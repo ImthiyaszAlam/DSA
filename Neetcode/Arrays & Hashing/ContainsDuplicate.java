@@ -1,18 +1,19 @@
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class ContainsDuplicate {
 
     public static boolean containsDuplicate(int nums[]) {
 
-        Arrays.sort(nums);
+        HashSet<Integer> duplicateMap = new HashSet<>();
 
-        HashMap<Integer, Integer> duplicateMap = new HashMap<>();
+        for (int num : nums) {
 
-        for (int i = 0; i < nums.length-1; i++) {
-            if (nums[i] == nums[i + 1]) {
+            if (duplicateMap.contains(num)) {
                 return true;
             }
+            duplicateMap.add(num);
         }
         return false;
     }
