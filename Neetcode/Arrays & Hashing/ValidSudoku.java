@@ -16,8 +16,10 @@ public class ValidSudoku {
                 char currentElement = sudokuBoard[i][j];
 
                 if (currentElement != '.') {
-                    String rowKey = "row_"+i+"_"+currentElement;
-                    System.out.println(rowKey);
+                    String rowKey = "row_" + i + "_" + currentElement;
+                    System.out.print(rowKey+",");
+                    String colKey = "col_" + j + "_" + currentElement;
+                    System.out.print(colKey+",");
                 }
             }
             System.out.println();
