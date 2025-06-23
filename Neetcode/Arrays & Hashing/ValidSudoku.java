@@ -1,8 +1,12 @@
+import java.util.HashSet;
+
 public class ValidSudoku {
 
     public static boolean isValidSudoku(char[][] sudokuBoard) {
 
         int n = sudokuBoard.length;
+
+        HashSet<Character> seenKey = new HashSet<>();
 
         // Row
         for (int i = 0; i < n; i++) {
@@ -10,7 +14,11 @@ public class ValidSudoku {
             // Column
             for (int j = 0; j < n; j++) {
                 char currentElement = sudokuBoard[i][j];
-                System.out.print(currentElement + ", ");
+
+                if (currentElement != '.') {
+                    String rowKey = "row_"+i+"_"+currentElement;
+                    System.out.println(rowKey);
+                }
             }
             System.out.println();
 
