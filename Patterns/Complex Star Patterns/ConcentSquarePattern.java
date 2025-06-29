@@ -6,7 +6,10 @@ public class ConcentSquarePattern {
 
             for (int j = 0; j < n; j++) {
 
-                int layer = Math.min(Math.min(i, j), Math.min(n - i - 1, n - j - 1));
+                int minInRowCol = Math.min(i, j);
+                int min2 = Math.min(n - i - 1, n - j - 1);
+
+                int layer = Math.min(minInRowCol, min2);
 
                 if (layer % 2 == 0) {
                     System.out.print("*");
@@ -15,9 +18,8 @@ public class ConcentSquarePattern {
                 }
             }
 
-            
-        System.out.println();
-        
+            System.out.println();
+
         }
     }
 }
