@@ -14,7 +14,10 @@ public class ConcentSquarePattern {
                     System.out.print("#");
                 }
             }
+
+            
+        System.out.println();
+        
         }
-      //  System.out.println();
     }
 }
