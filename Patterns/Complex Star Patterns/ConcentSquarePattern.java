@@ -16,8 +16,13 @@ public class ConcentSquarePattern {
                 int minInRowCol = Math.min(row, col);
                 int min2 = Math.min(totalMinRowMin1, totalMinColMin1);
 
+                    // Calculate current layer number
+
                 int layer = Math.min(minInRowCol, min2);
 
+                
+                // Alternate characters based on layer
+            
                 if (layer % 2 == 0) {
                     System.out.print("*");
                 } else {
