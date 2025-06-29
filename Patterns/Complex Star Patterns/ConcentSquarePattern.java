@@ -8,8 +8,13 @@ public class ConcentSquarePattern {
 
                 int row = i;
                 int col = j;
+
+                int totalMinRowMin1 = n - i - 1;
+
+                int totalMinColMin1 = n - j - 1;
+
                 int minInRowCol = Math.min(row, col);
-                int min2 = Math.min(n - i - 1, n - j - 1);
+                int min2 = Math.min(totalMinRowMin1, totalMinColMin1);
 
                 int layer = Math.min(minInRowCol, min2);
 
