@@ -11,12 +11,23 @@ public class SwapNum {
 
         System.out.println("After swapping :" + a + "&" + b);
 
-      //  b6 & a5
-        int d = a;   // d = 6
-        a = b;       // a = 6        
-        b = d;       // b = 5
+        // b6 & a5
+        int d = a; // d = 6
+        a = b; // a = 6
+        b = d; // b = 5
 
         System.out.println("After Second swapping :" + a + "&" + b);
+
+        int y = 10;
+        int z = 15;
+
+         System.out.println("Before swap: y & z  :" + y + " " + z);
+
+        y = y + z;   //15
+        z = y - z;   //-5
+        y = y - z;   // 10
+
+        System.out.println("After swap: y & z  :" + y + " " + z);
 
     }
 }
