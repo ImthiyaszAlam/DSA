@@ -11,5 +11,12 @@ public class SwapNum {
 
         System.out.println("After swapping :" + a + "&" + b);
 
+      //  b6 & a5
+        int d = a;   // d = 6
+        a = b;       // a = 6        
+        b = d;       // b = 5
+
+        System.out.println("After Second swapping :" + a + "&" + b);
+
     }
 }
