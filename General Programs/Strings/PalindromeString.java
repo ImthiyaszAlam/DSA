@@ -1,6 +1,6 @@
 public class PalindromeString {
     public static void main(String[] args) {
-        String str = "AnnA";
+        String str = "Anna";
         String reverseString = "";
 
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -8,7 +8,7 @@ public class PalindromeString {
             reverseString+=currentChar;
         }
 
-        if (str.equals(reverseString)) {
+        if (str.equalsIgnoreCase(reverseString)) {
             System.out.println(true);
         }else{
             System.out.println(false);
