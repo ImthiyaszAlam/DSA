@@ -10,6 +10,7 @@ public class CenterExpandingPattern {
             }
 
             System.out.print(j);
+            System.out.print(i);
 
             for (int k = 0; k <= i; k++) {
                 System.out.print("* ");
