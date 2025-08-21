@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class HalfDiamond {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your Desired Length");
+        System.out.println("Enter Your Length");
         int num = sc.nextInt();
 
         for (int i = 0; i < num; i++) {
