@@ -1,4 +1,19 @@
+import java.util.HashSet;
+
 public class FirstRepeatingCharacter {
+
+    public static String fRepeat(String str) {
+        HashSet<Character> seen = new HashSet<>();
+
+        for (char ch : str.toCharArray()) {
+            if (seen.contains(ch)) {
+                return Character.toString(ch);
+            }
+            seen.add(ch);
+        }
+        return "-1";
+
+    }
 
     public static String firstRepeatingChar(String str) {
 
@@ -16,7 +31,7 @@ public class FirstRepeatingCharacter {
 
     public static void main(String[] args) {
         String str = "leaerning";
-        System.out.println(firstRepeatingChar(str));
+        System.out.println(fRepeat(str));
 
     }
 }
