@@ -12,7 +12,7 @@ public class AddTwoBinary {
 
 
         if (s1.length()<s2.length()) {
-            return addTwoBinary(s1, s2);
+            return addTwoBinary(s2, s1);
         }
 
         int j = s2.length()-1;
