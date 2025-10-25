@@ -6,16 +6,17 @@ public class MissingInArray {
 
         int n = arr.length + 1;
         Arrays.sort(arr);
-        int arraySum = n * (n + 1) / 2;
+        long arraySum =(long) n * (n + 1) / 2;
         System.out.println("arraySum: "+arraySum);
-        int actualSum = 0;
+        long actualSum = 0;
 
-        System.out.println("actualSum: "+actualSum);
+        System.out.println("actualSum: "+arraySum);
         for (int i = 0; i < arr.length; i++) {
             actualSum += arr[i];
         }
 
-        return arraySum - actualSum;
+        int missing = (int) (arraySum - actualSum);
+        return missing;
 
     }
 
