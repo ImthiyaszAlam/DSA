@@ -4,6 +4,8 @@ public class BinaryStringsWO1 {
         if (i>=n) {
             return 1;
         }
+
+        int take = countRecur(i+2,n);
     }
     public static void main(String[] args) {
         
