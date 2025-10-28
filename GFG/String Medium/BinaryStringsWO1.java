@@ -6,6 +6,7 @@ public class BinaryStringsWO1 {
         }
 
         int take = countRecur(i+2,n);
+        int noTake = countRecur(i+1, n);
     }
     public static void main(String[] args) {
         
