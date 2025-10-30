@@ -8,6 +8,15 @@ public class SplitString {
         return true;
     }
 
+
+    public static boolean check(String str){
+        if (str.length()>=10) {
+            return true;
+        }
+
+        
+    }
+
     public static void main(String[] args) {
 
     }
