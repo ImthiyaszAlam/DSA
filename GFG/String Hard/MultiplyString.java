@@ -41,7 +41,9 @@ public class MultiplyString {
                     continue;
                 }
                 int n2Digit=  s2.charAt(j)-'0';
-                int sum = 
+                int sum = n1Digit *n2Digit + result[i1+i2]+carry;
+                carry = sum/10;
+                
             }
         }
 
