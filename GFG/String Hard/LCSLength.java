@@ -20,8 +20,11 @@ public class LCSLength {
 
 
 
-    static  waysToIncreaseLCSBy1(String str){
-        
+    static  waysToIncreaseLCSBy1(String s1,String s2){
+        int n = s1.length();
+        int m = s2.length();
+
+        int lcs1 = lcs(s1, s2);
     }
 
 
