@@ -27,7 +27,7 @@ public class LCSLength {
         int ans = 0;
         for (int i = 0; i < n; i++) {
             for (char ch = 'a'; ch <= 'z'; ch++) {
-                String updateStr = s1.substring(0, 1) + ch + s1.substring(i);
+                String updateStr = s1.substring(0, i) + ch + s1.substring(i);
                 int lcs2 = lcs(updateStr, s2);
                 if (lcs2 == lcs1 + 1) {
                     ans++;
