@@ -17,6 +17,14 @@ public class AlienDictionary {
             }
         }
 
+        for(int i=0;i<i+1<words.length;i++){
+            String w1 = words[i];
+            String w2 = words[i+1];
+            int len = Math.min(w1.length(),w2.length());
+            int j = 0;
+            
+        }
+
     }
 
     public static void main(String[] args) {
