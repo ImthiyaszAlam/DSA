@@ -22,6 +22,10 @@ public class AlienDictionary {
             String w2 = words[i+1];
             int len = Math.min(w1.length(),w2.length());
             int j = 0;
+
+            while (j<len && w1.charAt(j)==w2.charAt(j)) {
+                j++;
+            }
             
         }
 
