@@ -26,6 +26,14 @@ public class AlienDictionary {
             while (j<len && w1.charAt(j)==w2.charAt(j)) {
                 j++;
             }
+            if (j<len) {
+                int u = w1.charAt(j)-'a';
+                int v = w2.charAt(j)-'a';
+                graph.get(u).add(v);
+                inDegreee[v]++;
+            }else if (w1.length()>w2.length()) {
+                return "";
+            }
             
         }
 
