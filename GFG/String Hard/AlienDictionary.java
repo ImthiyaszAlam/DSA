@@ -49,6 +49,7 @@ public class AlienDictionary {
     }
 
     public static void main(String[] args) {
-
+        String[] words={"a","b","c"}
+        System.out.println(findOrder(words))
     }
 }
