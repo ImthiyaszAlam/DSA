@@ -14,6 +14,6 @@ public class TwoStringAnagram {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(remAnagram);
     }
 }
