@@ -11,9 +11,18 @@ public class TwoStringAnagram {
         for (char ch : s2.toCharArray()) {
             count2[ch - 'a']++;
         }
+
+        int ans = 0;
+        for(int i=0;i<26;i++){
+            ans+=Math.abs(count1[i]-count2[i]);
+        
+        }
+        return ans;
     }
 
     public static void main(String[] args) {
-        System.out.println(remAnagram);
+        String s1 = "alam";
+        String s2 = "malam";
+        System.out.println(remAnagram(s1, s2));
     }
 }
