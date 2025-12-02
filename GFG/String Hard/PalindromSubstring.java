@@ -42,6 +42,6 @@ public class PalindromSubstring {
                 { 5, 9 }
         };
 
-        palQueries(null, queries);
+       System.out.println( palQueries(s, queries));
     }
 }
