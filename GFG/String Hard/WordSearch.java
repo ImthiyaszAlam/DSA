@@ -15,9 +15,19 @@ public class WordSearch {
         if (validCoord(x, y, grid.length, grid[0].length) && word.charAt(index) == grid[x][y]) {
             return findWord(index, word, grid, x, y, dirX, dirY);
         }
+        return false;
     }
 
     public static void main(String[] args) {
-
+        int index = 0;
+        String word = "alam";
+        char[][] grid = {
+            {'a'},{'b'},{'c'}
+        };
+        int x = 1;
+        int y = 0;
+        int dirX = 01;
+        int dirY = 10;
+        findWord(index, word, grid, x, y, dirX, dirY)
     }
 }
