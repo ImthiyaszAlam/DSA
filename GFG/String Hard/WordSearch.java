@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class WordSearch {
 
     static boolean validCoord(int x, int y, int m, int n) {
@@ -18,6 +21,31 @@ public class WordSearch {
         return false;
     }
 
+
+
+    static boolean searchWord(String [][] grid,String word){
+        int m = grid.length;
+        int n = word.length();
+        List<int[]> ans = new ArrayList<>();
+
+        int x[] = {-1,-1,-1,0,0,0,1,1,1};
+        int y[] = { -1, 0, 1, -1, 1, -1, 0, 1};
+
+
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                for(int k = 0;k<8;k++){
+                    if (findWord(0, word, grid, i, j, x[k], y[k])) {
+                        ans.add(new int[]{i,j});
+                        break;
+                    }
+                }
+            }
+        }
+        return ans.toArray(new int[0][])
+
+
+    }
     public static void main(String[] args) {
         int index = 0;
         String word = "alam";
