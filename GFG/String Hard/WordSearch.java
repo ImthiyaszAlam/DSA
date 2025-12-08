@@ -21,8 +21,6 @@ public class WordSearch {
         return false;
     }
 
-
-
     static boolean searchWord(String [][] grid,String word){
         int m = grid.length;
         int n = word.length();
@@ -46,6 +44,13 @@ public class WordSearch {
 
 
     }
+
+    static void printResult(int[][] ans) {
+        for (int a[] : ans) {
+            System.out.print("{" + a[0] + "," + a[1] + "}" + " ");
+        }
+    }
+
     public static void main(String[] args) {
         int index = 0;
         String word = "alam";
