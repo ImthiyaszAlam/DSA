@@ -40,7 +40,7 @@ public class WordSearch {
                 }
             }
         }
-        return ans.toArray(new int[0][])
+        return ans.toArray(new int[0][]);
 
 
     }
@@ -61,6 +61,6 @@ public class WordSearch {
         int y = 0;
         int dirX = 01;
         int dirY = 10;
-        findWord(index, word, grid, x, y, dirX, dirY)
+        findWord(index, word, grid, x, y, dirX, dirY);
     }
 }
