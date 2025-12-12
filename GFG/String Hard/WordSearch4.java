@@ -14,6 +14,17 @@ public class WordSearch4 {
             return false;
         }
 
+        if (mat[x][y] == word.charAt(widX)) {
+
+            char temp = mat[x][y];
+            mat[x][y] = '#';
+
+            boolean res = findMatch(mat, word, x - 1, y, widX + 1) ||
+                    findMatch(mat, word, x + 1, y, widX + 1) ||
+                    findMatch(mat, word, x, y-1, widX + 1)||
+                    findMatch(mat, word, x, y+1, widX + 1);
+        }
+
         return false;
     }
 
