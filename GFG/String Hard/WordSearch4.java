@@ -56,5 +56,10 @@ public class WordSearch4 {
     }
     public static void main(String[] args) {
 
+        char [][] mat = {{'T','E','E'},{'S','G','K'},{'T','E','L'}};
+        String word = "TEA";
+
+        System.out.println(isWordExist(mat, word));
+
     }
 }
