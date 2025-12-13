@@ -28,6 +28,32 @@ public class WordSearch4 {
         return false;
     }
 
+
+    static boolean isWordExist(char [][] mat,String word){
+
+        int wLen = word.length();
+        int n = mat.length;
+        int m = mat[0].length;
+
+        if (wLen>(n*m)) {
+            return false;
+        }
+
+        for(int i = 0;i<n;i++){
+            for(int j = 0;j<m;j++){
+                if (mat[i][j] ==word.charAt(0)) {
+                    if (findMatch(mat, word, i, j, 0)) {
+                        return true;
+                    }
+                }
+            }
+        }
+
+
+
+
+        return false;
+    }
     public static void main(String[] args) {
 
     }
