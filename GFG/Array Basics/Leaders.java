@@ -10,7 +10,7 @@ public class Leaders {
 
             boolean isLeader = true;
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] <arr[j]) {
+                if (arr[i] < arr[j]) {
                     isLeader = false;
                     break;
                 }
@@ -26,7 +26,7 @@ public class Leaders {
 
     public static void main(String[] args) {
 
-        int listArray[] = { 1, 2, 3, 4, 5, 6 };
+        int listArray[] = { 2, 1, 3, 4, 5, 4, 3};
         System.out.println(findLeaders(listArray));
     }
 }
