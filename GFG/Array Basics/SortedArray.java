@@ -13,9 +13,9 @@ public class SortedArray {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4, 5, 6 };
+        int arr[] = { 1, 2, 3,7, 4, 5, 6 };
         int n = arr.length;
         System.out.println(isSorted(arr, n));
-        ;
+
     }
 }
