@@ -8,7 +8,7 @@ This repository contains **optimized implementations** of **Data Structures and 
 
 ---
 
-## 🚀 Features  
+##  Features  
 - ✅ **Efficient & Optimized DSA Implementations**  
 - ✅ **Well-Structured Code with Comments**  
 - ✅ **Commonly Asked Interview Questions**  
